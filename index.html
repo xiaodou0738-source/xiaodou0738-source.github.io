@@ -1,1 +1,39 @@
-<iframe src="https://nadgames.com/games/Combat_Reloaded_v4/" frameborder="0" style="border:none;" width="1030" height="620" scrolling="no"></iframe>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Screen Game</title>
+  <style>
+    /* 清除預設邊距並隱藏捲軸 */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000; /* 背景設為黑色，載入時視覺更佳 */
+    }
+
+    /* 讓 iframe 填滿整個螢幕 */
+    .game-iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <iframe 
+    class="game-iframe"
+    src="https://nadgames.com/games/Combat_Reloaded_v4/" 
+    allowfullscreen="true"
+    webkitallowfullscreen="true"
+    mozallowfullscreen="true"
+    scrolling="no">
+  </iframe>
+
+</body>
+</html>
